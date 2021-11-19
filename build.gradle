@@ -1,0 +1,50 @@
+plugins {
+    id 'java'
+    id 'io.quarkus'
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    implementation enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}")
+    implementation 'io.quarkus:quarkus-container-image-docker:2.4.2.Final'
+    implementation 'io.quarkus:quarkus-arc:2.4.2.Final'
+    implementation 'io.quarkus:quarkus-resteasy:2.4.2.Final'
+    implementation 'io.quarkus:quarkus-smallrye-fault-tolerance:2.4.2.Final'
+    implementation 'io.quarkus:quarkus-smallrye-jwt:2.4.2.Final'
+    implementation 'io.quarkus:quarkus-smallrye-metrics:2.4.2.Final'
+    implementation 'io.quarkus:quarkus-smallrye-health:2.4.2.Final'
+    implementation 'io.quarkus:quarkus-smallrye-openapi:2.4.2.Final'
+    implementation 'io.quarkus:quarkus-smallrye-opentracing:2.4.2.Final'
+    implementation 'io.quarkus:quarkus-rest-client:2.4.2.Final'
+    implementation 'io.quarkus:quarkus-resteasy-jsonb:2.4.2.Final'      //RESTEasy extension
+    implementation 'io.vertx:vertx-auth-jwt:4.2.1'
+    implementation 'io.quarkus:quarkus-hibernate-orm-panache:2.4.2.Final'   //Hibernate ORM specific dependencies
+    implementation 'io.quarkus:quarkus-jdbc-mysql:2.4.2.Final'      //JDBC driver dependencies
+//    implementation 'io.quarkus:quarkus-hibernate-orm'
+//    implementation 'quarkus-jdbc-mysql'
+    implementation 'io.quarkus:quarkus-resteasy-jackson'    //RESTEasy extension
+
+    testImplementation 'io.quarkus:quarkus-junit5:2.4.2.Final'
+    testImplementation 'io.rest-assured:rest-assured:4.4.0'
+}
+
+group 'com.example'
+description = "MicroProfile Starter example"
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+compileJava {
+    options.encoding = 'UTF-8'
+    options.compilerArgs << '-parameters'
+}
+
+compileTestJava {
+    options.encoding = 'UTF-8'
+}
