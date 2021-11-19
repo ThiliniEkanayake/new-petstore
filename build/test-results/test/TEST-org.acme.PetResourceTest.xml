@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.acme.PetResourceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-19T09:45:56" hostname="LAPTOP-N3BMAU0P" time="5.026">
+  <properties/>
+  <testcase name="testPetEndpoint()" classname="org.acme.PetResourceTest" time="5.026"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Nov 19, 2021 3:15:44 PM org.jboss.threads.Version <clinit>
+INFO: JBoss Threads version 3.1.1.Final
+Nov 19, 2021 3:15:50 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 5.4.21.Final
+Nov 19, 2021 3:15:54 PM org.jboss.resteasy.core.ResteasyDeploymentImpl processApplication
+INFO: RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.example.petstore.PetstoreRestApplication
+Nov 19, 2021 3:15:54 PM org.jboss.threads.Version <clinit>
+INFO: JBoss Threads version 3.1.1.Final
+Nov 19, 2021 3:15:56 PM io.quarkus.bootstrap.runner.Timing printStartupTime
+INFO: Quarkus 1.7.6.Final on JVM started in 16.896s. Listening on: http://0.0.0.0:8081
+Nov 19, 2021 3:15:56 PM io.quarkus.bootstrap.runner.Timing printStartupTime
+INFO: Profile test activated. 
+Nov 19, 2021 3:15:56 PM io.quarkus.bootstrap.runner.Timing printStartupTime
+INFO: Installed features: [agroal, cdi, hibernate-orm, hibernate-orm-panache, jaeger, jdbc-mysql, mutiny, narayana-jta, rest-client, resteasy, resteasy-jackson, resteasy-jsonb, security, smallrye-context-propagation, smallrye-fault-tolerance, smallrye-health, smallrye-jwt, smallrye-metrics, smallrye-openapi, smallrye-opentracing, swagger-ui, vertx, vertx-web]
+]]></system-err>
+</testsuite>
